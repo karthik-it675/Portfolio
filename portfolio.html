@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    nav {
+      background-color: #1e1e2f;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav h1 {
+      color: #fff;
+      font-size: 1.8em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #bbb;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4caf50;
+    }
+
+    header {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #4caf50, #2e7d32);
+      color: white;
+    }
+
+    header h2 {
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h4 {
+      margin-bottom: 10px;
+      color: #4caf50;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    .contact button {
+      width: 150px;
+      padding: 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact button:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #1e1e2f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav .container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h2 {
+        font-size: 2.2em;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <h1>Boddupally Karthik</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h2>Hello, I'm Boddupally Karthik</h2>
+    <p>Front-End Developer | Web Developer | Problem Solver</p>
+  </header>
+
+  <section id="about">
+    <div class="container about">
+      <h3>About Me</h3>
+      <p>
+        I’m a self-motivated web developer passionate about creating clean, user-friendly interfaces.
+        With experience in HTML, CSS, JavaScript, and responsive design, I build websites that not only look good but also function smoothly.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <h4>Portfolio Website</h4>
+          <p>A personal website to showcase my skills, projects, and contact info.</p>
+        </div>
+        <div class="project">
+          <h4>Todo List App</h4>
+          <p>A simple and effective to-do list application using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+          <h4>Sample Calculator</h4>
+          <p>Creating a simple calculator for your portfolio website is a great way to showcase your web development skills. Here's a basic example of an HTML, CSS, and JavaScript calculator that you can upload to your portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: boddupallykarthik6@gmail.com</p>
+      <p>LinkedIn: www.linkedin.com/in/boddupally-karthik-572112352</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Boddupally Karthik. All rights reserved.</p>
+  </footer>
+</body>
+</html>
